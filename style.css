@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #334155;
+  color: white;
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+#test:checked {
+  background-color: red;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.adding-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150%;
+  background-color: #1e293b;
+  padding: 10%;
+}
+
+.adding-section button {
+  background-color: transparent;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.adding-section svg {
+  width: 32px;
+  height: 32px;
+}
+
+.adding-section input {
+  background-color: transparent;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #94a3b8;
+  font-size: 24px;
+}
+
+.tasks-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+  background-color: #1e293b;
+  padding: 10%;
+  margin: 1.5rem;
+}
+
+.task-checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+#checkbox:checked + label::after {
+  background-color: red;
+}
+
+.tasks-section p {
+  font-size: 24px;
+  color: #94a3b8;
+}
+
+.tasks-section button {
+  background-color: transparent;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.tasks-section svg {
+  width: 32px;
+  height: 32px;
+}
+
+input[type="checkbox"] {
+  background-color: green;
+  color: green;
+}
